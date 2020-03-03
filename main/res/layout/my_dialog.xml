@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dialog"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="320dp"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon_dialog"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_ok"
+            android:visibility="visible"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/title_dialog"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/message_dialog"
+            android:textColor="#6C6D6C"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/message_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/info_dialog"
+            android:textColor="#cecece"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/info_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#f00"
+                android:background="?selectableItemBackground"
+                android:text="@string/txt_btn_cancel_dialog"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txt_yes"
+                android:textSize="14sp"
+                android:textColor="#009688"
+                android:text="@string/txt_btn_confirm_dialog"
+                android:layout_width="0dp"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

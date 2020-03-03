@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomDialog</string>
+    <string name="title_dialog">Title ?</string>
+    <string name="message_dialog">Message Dialog</string>
+    <string name="info_dialog">Info Dialog</string>
+    <string name="txt_btn_cancel_dialog">Cancel</string>
+    <string name="txt_btn_confirm_dialog">Confirm</string>
+</resources>
